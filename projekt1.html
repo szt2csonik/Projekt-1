@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projekt1css.css">
+    <title>projekt1</title>
+    <script>
+        function changecolor(){
+        let number = document.getElementById('num').value;
+        let color = document.getElementById('colorpicker').value;
+        
+        if (number==1) {
+            document.getElementById("egy").style.backgroundColor = color;
+        }
+        else if (number==2) {
+            document.getElementById("ketto").style.backgroundColor = color;
+        }
+        else if (number==3) {
+            document.getElementById("harom").style.backgroundColor = color;
+        }
+        else if (number==4) {
+            document.getElementById("negy").style.backgroundColor = color;
+        }
+        else if (number==5) {
+            document.getElementById("ot").style.backgroundColor = color;
+        }
+        else if (number==6) {
+            document.getElementById("hat").style.backgroundColor = color;
+        }
+        else if (number==7) {
+            document.getElementById("het").style.backgroundColor = color;
+        }
+        else if (number==8) {
+            document.getElementById("nyolc").style.backgroundColor = color;
+        }
+        else{
+            document.body.style.backgroundColor=color;
+        }
+    }
+        
+        
+    </script>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="egy"></div>
+        <div id="ketto"></div>
+        <div id="harom"></div>
+        <div id="negy"></div>
+        <div id="ot"></div>
+        <div id="hat"></div>
+        <div id="het"></div>
+        <div id="nyolc"></div>
+    </div>
+    <div>
+        <input type="text" name="num" id="num" value="1">
+        <input type="color" name="colorpicker" id="colorpicker">
+        <input type="button" onclick = "changecolor();" value="Select">
+    </div>
+
+</body>
+</html>
